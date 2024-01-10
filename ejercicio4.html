@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+<script>
+    var usuarioIngresado = prompt("Ingrese su nombre de usuario:");
+    var claveIngresada = prompt("Ingrese su clave:");
+
+    var usuarioValido = "admin";
+    var claveValida = "1234";
+
+    if (usuarioIngresado === usuarioValido && claveIngresada === claveValida) {
+        alert("¡Bienvenido, " + usuarioIngresado + "!");
+    } else {
+        alert("Credenciales incorrectas. Acceso denegado.");
+    }
+</script>
+
+</body>
+</html>

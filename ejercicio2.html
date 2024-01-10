@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de presupuesto</title>
+</head>
+<body>
+
+<script>
+    var ingresoTotal = parseFloat(prompt("Ingrese su ingreso total:"));
+
+    var gastosNecesarios = ingresoTotal * 0.5;
+    var gastosOpcionales = ingresoTotal * 0.3;
+    var ahorroEInversion = ingresoTotal * 0.2;
+
+    if (!isNaN(ingresoTotal) && ingresoTotal >= 0) {
+        document.write("<p>Monto para Gastos Necesarios: $" + gastosNecesarios.toFixed(2) + "</p>");
+        document.write("<p>Monto para Gastos Opcionales: $" + gastosOpcionales.toFixed(2) + "</p>");
+        document.write("<p>Monto para Ahorro e Inversión: $" + ahorroEInversion.toFixed(2) + "</p>");
+    } else {
+        document.write("<p>Por favor, ingrese un valor válido para el ingreso total.</p>");
+    }
+</script>
+
+</body>
+</html>

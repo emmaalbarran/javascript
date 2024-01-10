@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Equilibrio</title>
+</head>
+<body>
+
+<script>
+    var costosFijos = parseFloat(prompt("Ingrese los Costos Fijos:"));
+    var precioVenta = parseFloat(prompt("Ingrese el Precio de Venta por unidad:"));
+    var costosVariables = parseFloat(prompt("Ingrese los Costos Variables por unidad:"));
+
+    var puntoEquilibrio = costosFijos / (precioVenta - costosVariables);
+
+    if (!isNaN(puntoEquilibrio) && puntoEquilibrio >= 0) {
+        alert("El Punto de Equilibrio es: " + puntoEquilibrio.toFixed(2) + " unidades.");
+    } else {
+        alert("Por favor, ingrese valores válidos para realizar el cálculo.");
+    }
+</script>
+
+</body>
+</html>

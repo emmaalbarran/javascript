@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida edad</title>
+</head>
+<body>
+
+<script>
+    var edad = parseInt(prompt("Ingrese su edad:"));
+
+    if (!isNaN(edad) && edad >= 18) {
+        alert("¡Bienvenido! Usted es mayor de 18 años.");
+    } else {
+        alert("Lo siento, usted es menor de 18 años. Acceso denegado.");
+    }
+</script>
+
+</body>
+</html>
